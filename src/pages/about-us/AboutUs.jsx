@@ -48,12 +48,12 @@ const AboutUs = () => {
 
   console.log('AboutUs')
   return (
-    <div className='p-4 md:p-6'>
+    <div className='p-4 md:p-6 xl:p-12'>
       <section className="objective flex flex-col min-h-screen text-center font-PublicSans py-10 gap-10 md:gap-20">
 
-        <div className='flex-1 flex flex-col gap-4 md:self-center md:w-5/6'>
+        <div className='flex-1 flex flex-col gap-4 md:self-center max-w-[854px] md:w-5/6'>
           <span className='text-[#346ed6] font-medium leading-[27px]'>About us</span>
-          <h1 className='text-3xl font-bold font-Montserrat'>Our Objective, Your Health</h1>
+          <h1 className='text-3xl lg:text-5xl font-bold font-Montserrat'>Our Objective, Your Health</h1>
           <div className='text-[#505673] flex flex-col gap-4'>
             <p>
               At Mobihealth, we are on a mission to revolutionize healthcare and provide quality medical services to individuals around the globe. Our commitment to your health drives every decision we make.
@@ -73,8 +73,8 @@ const AboutUs = () => {
       <section className="mission flex flex-col min-h-screen font-PublicSans py-10 gap-10 md:gap-20">
 
         <div className='text-center flex flex-col gap-4 md:self-center md:w-4/6'>
-          <h2 className='text-3xl font-bold font-Montserrat'> Our Mission</h2>
-          <p className='text-[#505673]'>To bring affordable, quality healthcare within the reach of everyone leveraging technology.</p>
+          <h2 className='text-3xl lg:text-4xl font-bold font-Montserrat'> Our Mission</h2>
+          <p className='text-[#505673] lg:text-2xl'>To bring affordable, quality healthcare within the reach of everyone leveraging technology.</p>
         </div>
 
         <div className='flex flex-col-reverse md:grid md:grid-cols-2 py-4 gap-10'>
@@ -83,10 +83,10 @@ const AboutUs = () => {
 
           <div className='flex-1 flex flex-col gap-4'>
             <div className='text-center flex flex-col gap-2 mb-2'>
-              <span className='text-[#346ed6] font-medium leading-[27px]'>Discover our Identity</span>
-              <h2 className='text-3xl font-bold font-Montserrat'>Who we are</h2>
+              <span className='text-[#346ed6] lg:text-lg font-medium leading-[27px]'>Discover our Identity</span>
+              <h2 className='text-3xl lg:text-4xl font-bold font-Montserrat'>Who we are</h2>
             </div>
-            <div className='text-[#505673] flex flex-col gap-4'>
+            <div className='text-[#505673] lg:text-lg flex flex-col gap-4'>
               <p>Multi-Award winning Mobihealth is Africa's first fully integrated Telehealth Company providing one stop portal for users' healthcare needs globally. </p>
               <p>Mobihealth telemedicine app gives users 24/7 access to over 100k medical experts from the US, UK, Nigeria and other carefully selected countries of the world within minutes for video consultations, investigation, prescription, treatment and referrals at the convenience of patient's.</p>
               <p>Mobihealth aims to bridge global healthcare needs and addresses multiple pain points; Inadequate healthcare workforce, poor/lack of healthcare infrastructures, limited access to private/public health insurance, medical tourism, exposure to counterfeit medicines, unqualified personnel & high costs of treatments, especially in developing countries. </p>
@@ -103,10 +103,10 @@ const AboutUs = () => {
 
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-4'>
-            <span className='text-[#346ed6] font-medium leading-[27px]'>What we bring to the table</span>
-            <h2 className='text-3xl font-bold font-Montserrat capitalize'>benefits to orgainzations</h2>
+            <span className='text-[#346ed6] lg:text-lg font-medium leading-[27px]'>What we bring to the table</span>
+            <h2 className='text-3xl lg:text-4xl font-bold font-Montserrat capitalize'>benefits to orgainzations</h2>
           </div>
-          <ul className='text-[#505673] text-lg flex flex-col gap-4'>
+          <ul className='text-[#505673] lg:text-lg flex flex-col gap-4'>
             <ListItem text={'Quick Access and Convenience to top-notch medical experts in Nigeria'} />
             <ListItem text={'Low cost: Basic plans for $10 pa and $35 pm for premium access to medical experts globally.'} />
             <ListItem text={'Cost savings to employer, employees and customers'} />
@@ -128,28 +128,24 @@ const AboutUs = () => {
       <section className="leaders flex flex-col gap-[60px] md:gap-20 py-10">
 
         <div className='flex flex-col gap-4 text-center md:self-center md:w-5/6'>
-          <span className='text-[#346ed6] font-medium leading-[27px]'>Leadership in Healthcare Innovation</span>
-          <h2 className='text-3xl font-bold font-Montserrat'>Meet Our Leaders</h2>
+          <span className='text-[#346ed6] lg:text-lg font-medium leading-[27px]'>Leadership in Healthcare Innovation</span>
+          <h2 className='text-3xl lg:text-4xl font-bold font-Montserrat'>Meet Our Leaders</h2>
           <p className='text-[#505673]'>
             Embark on a journey to discover the expertise and dedication driving our commitment to revolutionizing telehealth. Explore the visionary minds behind our mission to create a healthier tomorrow through innovative virtual connections and personalized care.
           </p>
         </div>
 
         <div className='flex flex-col gap-14 '>
-          <header className='overflow-auto flex md:justify-center'>
+          <header className='overflow-auto flex md:justify-center sticky top-0 inset-x-0 bg-white'>
             <nav
-              className='flex gap-3 p-4 flex-1 border rounded-xl md:flex-none'
+              className='flex gap-3 p-4 border rounded-xl md:flex-none lg:max-w-[950px] '
               onClick={handleTapSwitch}
               ref={linkRef}
             >
-              <a className='text-[.63rem] leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] active-tab'
-                href="#tab2" id='tab1' >All</a>
-              <a className='text-[.63rem] leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px]'
-                href="#tab2" id='tab2' >Board&nbsp;of&nbsp;Directors</a>
-              <a className='text-[.63rem] leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px]'
-                href="#tab3" id='tab3' >Board&nbsp;Advisors</a>
-              <a className='text-[.63rem] leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px]'
-                href="#tab4" id='tab4' >Management&nbsp;Team</a>
+              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px] active-tab' id='tab1' >All</button>
+              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab2' >Board&nbsp;of&nbsp;Directors</button>
+              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab3' >Board&nbsp;Advisors</button>
+              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab4' >Management&nbsp;Team</button>
             </nav>
           </header>
           <div className="content-wrapper" ref={contentRef}>
@@ -196,10 +192,14 @@ const ListItem = ({ text }) => (
 )
 
 const LeadersCard = ({ name, image, position }) => (
-  <figure className='flex flex-col rounded-3xl border border-[#e5efff] h-[570px]'>
-    <div className='flex-1'>
-      <img src={image} alt="name" className='flex-shrink-0 rounded-tr-3xl rounded-tl-3xl object-cover w-full h-full' />
+  <figure className=' rounded-3xl border border-[#e5efff] leaders-card'>
+    <div className=''>
+      <img 
+        src={image} 
+        alt="name" 
+        className=' rounded-tr-3xl rounded-tl-3xl object-cover w-full h-full' />
     </div>
+
     <figcaption className='font-PublicSans '>
       <div className='pt-6 pb-4 px-2 text-center flex flex-col gap-2'>
         <p className="titled-name font-medium text-xl text-[#333]">{name}</p>
