@@ -142,10 +142,10 @@ const AboutUs = () => {
               onClick={handleTapSwitch}
               ref={linkRef}
             >
-              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px] active-tab' id='tab1' >All</button>
-              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab2' >Board&nbsp;of&nbsp;Directors</button>
-              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab3' >Board&nbsp;Advisors</button>
-              <button className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab4' >Management&nbsp;Team</button>
+              <a href='#tab1-content' className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px] active-tab' id='tab1' >All</a>
+              <a href='#tab2-content' className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab2' >Board&nbsp;of&nbsp;Directors</a>
+              <a href='#tab3-content' className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab3' >Board&nbsp;Advisors</a>
+              <a href='#tab4-content' className='text-[.63rem] lg:text-xl leading-7 flex items-center justify-center border rounded-xl h-14 w-[100px] lg:w-[280px]' id='tab4' >Management&nbsp;Team</a>
             </nav>
           </header>
           <div className="content-wrapper" ref={contentRef}>
