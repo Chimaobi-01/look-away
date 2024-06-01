@@ -1,4 +1,15 @@
 import Images from "./Images";
+
+import leader1 from '../assets/about-us/leader1.png'
+import leader2 from '../assets/about-us/leader2.png'
+import leader3 from '../assets/about-us/leader3.png'
+import leader4 from '../assets/about-us/leader4.png'
+import leader5 from '../assets/about-us/leader5.png'
+import leader6 from '../assets/about-us/leader6.png'
+import leader7 from '../assets/about-us/leader7.png'
+
+
+
 const {
   Time,
   Money,
@@ -351,6 +362,57 @@ const teleFaqData = [
       </ul>`
   },
 ]
+const leadersInHealthSector = [
+  {
+    name: "High Highness. Alhaji Nasir Ado Bayero, Emir of Bichi Emirate, Kano ",
+    position: "Chairman",
+    image: leader1,
+    category: "directors",
+    id: 1
+  },
+  {
+    name: "Dr.  Funmi Adewara, M.D, MPhil (Cambridge)",
+    position: "Founder, Executive Director",
+    image: leader5,
+    category: "directors",
+    id: 2
+  },
+  {
+    name: "Prof. Jay H. Sanders ",
+    position: "M.D., F.A.C.P., F.A.C.A.A.I., FATA",
+    image: leader4,
+    category: "advisor",
+    id: 3
+  },
+  {
+    name: "Dr Jide Agunbiade",
+    position: "Phd, MBA, FNSE",
+    image: leader3,
+    category: "advisor",
+    id: 4
+  },
+  {
+    name: "Dr. Charles Ononiwu, FWACS, FICS, MBA",
+    position: "Medical Advisor-Director",
+    image: leader2,
+    category: "team",
+    id: 5
+  },
+  {
+    name: " Mr. Ade Adefeko ",
+    position: "",
+    image: leader7,
+    category: "team",
+    id: 6
+  },
+  {
+    name: "Dr. Charles Ononiwu, FWACS, FICS, MBA",
+    position: "",
+    image: leader6,
+    category: "team",
+    id: 7
+  },
+]
 
 export {
   homeCardData,
@@ -361,5 +423,6 @@ export {
   impactData,
   beneficaryData,
   progressData,
+  leadersInHealthSector,
   homeFaqData as faqData, reviews, teleFaqData
 };

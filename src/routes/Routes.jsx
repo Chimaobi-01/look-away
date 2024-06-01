@@ -10,6 +10,7 @@ import Emr from '../pages/emr/Emr'
 import Privacy from '../pages/privacy-terms/Privacy'
 import TeleConsultation from '../pages/teleconsultation/TeleConsultation'
 import NotFound from '../pages/error/NotFound'
+// import DemoAboutUs from '../pages/about-us/DemoAboutUs'
 
 const OurRoutes = () => {
   return (

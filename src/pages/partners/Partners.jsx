@@ -4,7 +4,7 @@ import Images, { awards, ourClients, partnered } from '../../utils/Images'
 
 const Partners = () => {
   return (
-    <div className='flex flex-col gap-20 p-3 md:pt-24 md:px-6 md:container md:mx-auto'>
+    <div className='flex flex-col gap-20 p-3 md:py-24 md:mt-28 xl:mt-1 md:px-6 md:container md:mx-auto'>
 
       <header className="flex flex-col gap-3 text-center items-center">
         <span className='text-[#346ED6] text-base md:text-lg font-medium font-PublicSans'>Building Bridges to Better Healthcare</span>
@@ -14,7 +14,7 @@ const Partners = () => {
         </div>
       </header>
 
-      <section className="partners flex flex-col gap-10">
+      <section className="partners flex flex-col gap-14 md:gap-20">
 
         <section className='flex flex-col gap-10'>
           <div className='flex flex-col gap-3 text-center'>
