@@ -9,7 +9,7 @@ function AboutUs() {
 
 
   return (
-    <div className='container mx-auto md:my-14 min-h-screen flex flex-col md:gap-20 gap-6'>
+    <div className='container mx-auto my-14 min-h-screen flex flex-col gap-20'>
       <OurObjectiveSection />
       <OurMissionSection />
       <OurLeadersSection />
