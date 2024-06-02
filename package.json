@@ -1,8 +1,8 @@
 {
-  "homepage":"http://Chimaobi-01.github.io/look-away",
   "name": "-",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "homepage":"https://Chimaobi-01.github.io/look-away",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
